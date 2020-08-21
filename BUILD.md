@@ -42,6 +42,8 @@ are published to public maven repositories and for them this step can be skipped
 - And install each of these to your local maven repository
 
   `mvn clean install -DskipTests`
+or
+  `mvn clean install -DskipTests -Dmaven.javadoc.skip=true`
 
 You also need the artifacts for datacollector-edge installed into your local maven repository.
 
