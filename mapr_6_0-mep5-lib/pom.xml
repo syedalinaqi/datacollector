@@ -37,7 +37,8 @@
     <avro.version>1.7.7</avro.version>
     <!-- Closed source artifacts should be provided dependency -->
     <hadoop.version>2.7.0-mapr-1710</hadoop.version>
-    <hive.version>2.1.1-mapr-1803</hive.version>
+    <hive.version>2.3.3-mapr-1904-r3</hive.version>
+<!--    <hive.version>2.1.1-mapr-1803</hive.version>-->
     <zookeeper.version>3.4.5-mapr-1710</zookeeper.version>
     <spark.version>2.2.1-mapr-1803</spark.version>
     <jackson.version>2.6.5</jackson.version>

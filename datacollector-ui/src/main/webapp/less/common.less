@@ -46,6 +46,7 @@ ng\:form {
 body {
   min-width: 1000px;
   overflow-y: hidden;
+  color: #fffffc !important;
 
   .navbar-fixed-top {
     height: 50px;
@@ -59,8 +60,10 @@ body {
       float: left;
 
       img {
-        width: 210px;
-        margin-top: -19px;
+        //width: 210px;
+        //margin-top: -19px;
+        object-fit: contain;
+        height: 50px;
       }
     }
 
@@ -135,7 +138,7 @@ body {
     @media (max-width: 768px) {
       .container-fluid {
         .navbar-nav{
-          background-color: #f8f8f8;
+          background-color: #393838;
 
           .menu-label {
             display: inline;
@@ -362,11 +365,11 @@ body {
     }
 
     .form-login {
-      background-color: #ffffff;
+      background-color: #18191b;
       padding: @defaultPadding @defaultPadding*2 @defaultPadding*2 @defaultPadding*2;
       border-radius: 15px;
-      border: #d2d2d2 5px;
-      box-shadow:0 1px 0 #cfcfcf;
+      //border: #d2d2d2 5px;
+      box-shadow:0 1px 15px rgba(0,0,0,.1), 0 1px 8px rgba(0,0,0,.1);
 
       h4 {
         border:0 solid #fff;
@@ -401,7 +404,7 @@ body {
 
   .CodeMirror {
     //border: solid 1px #008000;
-    border: 1px solid #ccc;
+    border: 1px solid @border-color;
     min-height: 34px;
     height: auto;
     //min-width: 500px;
@@ -410,6 +413,8 @@ body {
     //position: relative;
     color: #555;
     overflow: hidden;
+
+    background-color: @bg-default;
 
     .cm-string-2 {
       color: inherit;
@@ -443,8 +448,8 @@ body {
 
   .codemirror-read-only {
     .CodeMirror {
-      background-color: #eee;
-      border: 1px solid #ccc;
+      background-color: @bg-default;
+      border: 1px solid @border-color;
     }
   }
 
@@ -514,6 +519,19 @@ body {
   }
 }
 
+.dropdown-menu>li>a{
+  color: #fffffc !important;
+
+  &:hover{
+    color:black !important;
+  }
+}
+.swagger-ui .operation .content label{
+  color: black !important;
+}
+.btn-default{
+  color: #fffffc !important;
+}
 .table-hover {
   tbody {
     tr:hover {

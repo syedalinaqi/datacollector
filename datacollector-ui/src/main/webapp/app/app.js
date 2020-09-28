@@ -91,7 +91,7 @@ angular.module('dataCollectorApp')
                  $timeout, $translate, authService, userRoles, configuration, Analytics, $q, editableOptions, $http,
                  tracking, trackingEvent) {
 
-    var defaultTitle = 'Data Collector | StreamSets';
+    var defaultTitle = 'Data Collector | VU360';
     var pipelineStatusTimer;
     var alertsTimer;
     var isWebSocketSupported;
@@ -261,7 +261,7 @@ angular.module('dataCollectorApp')
           resolve: {
             dpmInfoModel: function () {
               return {
-                baseURL: 'https://cloud.streamsets.com',
+                baseURL: 'https://rpa.vu360solutions.org',
                 userID: '',
                 userPassword: ''
               };
@@ -533,19 +533,19 @@ angular.module('dataCollectorApp')
       },
 
       openEdgeTutorialPage: function() {
-        window.open('https://streamsets.com/documentation/datacollector/latest/help/datacollector/UserGuide/Edge_Mode/EdgePipelines_title.html', '_blank');
+        window.open('https://rpa.vu360solutions.org', '_blank');
       },
 
       openMicroserviceTutorialPage: function() {
-        window.open('https://streamsets.com/blog/create-microservice-pipelines-streamsets-data-collector-tutorial/', '_blank');
+        window.open('https://rpa.vu360solutions.org', '_blank');
       },
 
       openControlHubTutorialPage: function() {
-        window.open('https://streamsets.com/documentation/controlhub/latest/help/controlhub/UserGuide/GettingStarted/GettingStarted_title.html', '_blank');
+        window.open('https://rpa.vu360solutions.org', '_blank');
       },
 
       openGithubTutorial: function() {
-        window.open('https://github.com/streamsets/tutorials', '_blank');
+        window.open('https://rpa.vu360solutions.org', '_blank');
       },
 
       viewSamplePipelines: function() {
@@ -653,7 +653,7 @@ angular.module('dataCollectorApp')
                   }
                   if (!activationInfo.info.valid) {
                     $rootScope.common.infoList = [{
-                      message: 'Activation key expired, you need to get a new one from StreamSets'
+                      message: 'Activation key expired, you need to get a new one from VU360_RPA'
                     }];
                     tracking.mixpanel.track(trackingEvent.ACTIVATION_EXPIRED, {});
                   }

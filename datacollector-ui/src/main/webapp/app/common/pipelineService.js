@@ -34,9 +34,9 @@ angular.module('dataCollectorApp.common')
       cursorHeight: 1
     };
     var fragmentGroupStages = [
-      'com_streamsets_pipeline_stage_origin_fragment_FragmentSource',
-      'com_streamsets_pipeline_stage_processor_fragment_FragmentProcessor',
-      'com_streamsets_pipeline_stage_destination_fragment_FragmentTarget'
+      'com_VU360_RPA_pipeline_stage_origin_fragment_FragmentSource',
+      'com_VU360_RPA_pipeline_stage_processor_fragment_FragmentProcessor',
+      'com_VU360_RPA_pipeline_stage_destination_fragment_FragmentTarget'
     ];
 
     var confFragmentId = 'conf.fragmentId';
@@ -257,7 +257,7 @@ angular.module('dataCollectorApp.common')
      */
     this.isDPMStatisticsLibraryInstalled = function() {
       var statsLibraryDefn = _.find(self.stageDefinitions, function (stage) {
-        return stage.library === 'streamsets-datacollector-stats-lib';
+        return stage.library === 'VU360_RPA-datacollector-stats-lib';
       });
 
       return statsLibraryDefn !== undefined;
@@ -2163,7 +2163,7 @@ angular.module('dataCollectorApp.common')
             !s.notInstalled &&
             s.hideStage.length === 0 &&
             s.name.indexOf('_fragment_') === -1 &&
-            s.library !== 'streamsets-datacollector-stats-lib' &&
+            s.library !== 'VU360_RPA-datacollector-stats-lib' &&
             (!executionMode || s.executionModes.indexOf(executionMode) !== -1) &&
             (!isMicroservicePipeline || s.type !== pipelineConstant.SOURCE_STAGE_TYPE ||
               s.sendsResponse)

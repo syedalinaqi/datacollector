@@ -49,8 +49,8 @@ angular
           $scope.operationInProgress = false;
         },
         function(err) {
-          var ERROR_CANNOT_VERIFY = 'java.lang.RuntimeException: java.io.IOException: com.streamsets.datacollector.activation.signed.VerifierException: Could not verify signature';
-          var ERROR_INVALID = 'java.lang.RuntimeException: java.io.IOException: com.streamsets.datacollector.activation.signed.VerifierException: Invalid value, cannot verify';
+          var ERROR_CANNOT_VERIFY = 'java.lang.RuntimeException: java.io.IOException: com.VU360_RPA.datacollector.activation.signed.VerifierException: Could not verify signature';
+          var ERROR_INVALID = 'java.lang.RuntimeException: java.io.IOException: com.VU360_RPA.datacollector.activation.signed.VerifierException: Invalid value, cannot verify';
           if (err.data) {
             if (err.data.RemoteException &&
                 err.data.RemoteException.message &&
@@ -181,8 +181,8 @@ angular
           $scope.operationInProgress = false;
           if (err.data === 'Error: Too many attempts') {
             $scope.common.errors = ['You seem to be having trouble registering, and you will need to wait at least an hour before trying again. ' +
-              'If you are a customer, please reach out to support@streamsets.com. Otherwise, community support options can be found at ' +
-              'https://streamsets.com/community/'];
+              'If you are a customer, please reach out to support@vu360solutions.org. Otherwise, community support options can be found at ' +
+              'https://vu360solutions.org'];
           } else {
             $scope.common.errors = ['We had trouble contacting the registration server, please try again'];
           }

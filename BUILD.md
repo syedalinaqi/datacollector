@@ -75,6 +75,12 @@ For Data Collector CLI, execute:
 
 To skip the RAT report during the build use the `-DskipRat` option.
 
+### Important Notes:
+
+=> In-case you encounter and error regarding `maxFilesLimit`, See [this](https://streamsets.com/documentation/datacollector/latest/help/datacollector/UserGuide/Installation/InstallationAndConfig.html#concept_al3_qz5_jz).
+=> Run: ``export JAVA_HOME=`/usr/libexec/java_home -v 1.8` `` to set the Path
+
+
 ## Running integration tests
 
 From within the Data Collector directory, execute:

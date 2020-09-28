@@ -131,7 +131,7 @@ angular.module('dataCollectorApp.common')
       if (self.config && self.config[UI_HOSTED_HELP_BASE_URL]) {
         return self.config[UI_HOSTED_HELP_BASE_URL];
       }
-      return 'https://streamsets.com/documentation/datacollector/latest/help/';
+      return 'https://vu360solutions.org';
     };
 
     /**
@@ -366,7 +366,7 @@ angular.module('dataCollectorApp.common')
       if (self.config && self.config[UI_REGISTRATION_URL] !== undefined) {
         return self.config[UI_REGISTRATION_URL];
       }
-      return 'https://registration.streamsets.com/register';
+      return 'https://vu360solutions.org';
     };
 
     /**

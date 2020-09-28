@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 .home-empty-container {
   display: none;
 
@@ -100,7 +101,7 @@
   .panel-heading {
     height: 45px;
     padding: @smallPadding @smallPadding*3;
-    box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
 
     .navbar-toggle {
       display: block;
@@ -175,6 +176,7 @@
         }
       }
     }
+
     .pipelines-count {
       padding: @defaultPadding @defaultPadding*3 @defaultPadding 0;
       color: #ACACAC;
@@ -199,13 +201,13 @@
       padding: 10px 10px 40px 0;
 
       .pipeline-container {
-        border: 1px solid #dedede;
+        border: 1px solid @border-color-default;
         position: relative;
         display: inline-block;
         margin: 0 0 15px 15px;
         padding: 22px 20px 40px;
         border-radius: 2px 3px 2px 2px;
-        box-shadow: 0 1px 2px rgba(0,0,0,.15);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
         vertical-align: top;
         opacity: 1;
         float: left;
@@ -216,19 +218,18 @@
             font-size: 18px;
             font-weight: 600;
             line-height: 22px;
-            color: #4e4e4e;
+            color: @default-color-for-headings;
             text-decoration: none;
             text-transform: none;
             display: inline;
-            background-image: linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,0) 1px,#d3d3d3 1px,#d3d3d3 2px,rgba(0,0,0,0) 2px);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #d3d3d3 1px, #d3d3d3 2px, rgba(0, 0, 0, 0) 2px);
             position: relative;
-            transition: opacity .3s ease-out 0s,visibility .3s ease-out 0s;
+            transition: opacity .3s ease-out 0s, visibility .3s ease-out 0s;
             pointer-events: none;
             word-wrap: break-word;
             word-break: break-all;
           }
         }
-
 
         .project-additional-info {
           position: absolute;
@@ -249,7 +250,7 @@
           right: 0;
           bottom: 0;
           position: absolute;
-          background-color: #f7f7f7;
+          background-color: @bg-default;
 
           .running-status, .invalid-status {
             width: 23px;
@@ -321,7 +322,7 @@
           height: 170px;
           padding: 0;
           border: 1px solid #dedede;
-          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 
           .centering-container {
             margin: auto;
@@ -339,7 +340,7 @@
         &.single-pipeline {
           width: 220px;
           height: 170px;
-          background-color: #FFF;
+          background-color: @bg-default;
         }
 
       }
@@ -377,6 +378,7 @@
           .header {
             display: inline-block;
             font-weight: bold;
+
             a {
               cursor: pointer;
               color: black;
@@ -522,10 +524,12 @@
 
           .action-menu {
             cursor: pointer;
+
             .dropdown-toggle {
               display: inline-block;
               width: 30px;
               padding: 0 12px;
+
               .fa {
                 color: #a2a1a1;
 
@@ -554,9 +558,9 @@
 }
 
 .help-panel {
-  background: #FFFFFF;
-  border: 1px solid #DCDCDC;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.07);
+  background: @bg-default;
+  border: 1px solid @border-color-default;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   height: 330px;
   width: 330px;
@@ -567,7 +571,7 @@
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 
   &:hover {
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
     transform: translateY(-1px);
   }
 
@@ -576,7 +580,7 @@
 
     .help-panel-title {
       font-size: 22px;
-      color: #42526E;
+      color: @default-color-for-headings;
     }
 
     .help-panel-title-btn {
@@ -591,7 +595,7 @@
     .help-panel-body {
       margin-top: 20px;
       font-size: 14px;
-      color: #42526E;
+      color: @default-color-for-headings;
 
       li {
         line-height: 25px;

@@ -25,7 +25,7 @@ describe('dataCollectorApp module', function() {
   }));
 
   it('should have correct page title.', function() {
-    expect($rootScope.common.title == 'StreamSets Data Collector').toBeTruthy();
+    expect($rootScope.common.title == 'VU360_RPA Data Collector').toBeTruthy();
   });
 
 });

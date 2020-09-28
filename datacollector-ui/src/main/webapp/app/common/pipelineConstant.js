@@ -71,7 +71,7 @@ angular.module('dataCollectorApp.common')
           'CLUSTER_MESOS_STREAMING'
       ],
 
-      REST_SERVICE_STAGE_NAME: 'com_streamsets_pipeline_stage_origin_restservice_RestServiceDPushSource',
+      REST_SERVICE_STAGE_NAME: 'com_VU360_RPA_pipeline_stage_origin_restservice_RestServiceDPushSource',
 
       ACTIVE_STATES: [
           'STARTING',

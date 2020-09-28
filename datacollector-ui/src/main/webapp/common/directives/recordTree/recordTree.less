@@ -28,7 +28,7 @@
     clear: left;
     list-style: none;
     padding: @smallPadding/2 @smallPadding/2 @smallPadding/2 @smallPadding * 4;
-
+    color: @default-color-for-headings;
 
     &.is-root {
       padding: @smallPadding/2;
@@ -36,12 +36,14 @@
 
     &.field-addition {
       background-color: #eaffea;
+      color: @color-text-dark;
 
       &.is-root {
         background-color: inherit;
         .root-label {
           .field-name {
             background-color: #eaffea;
+            color: @color-text-dark;
           }
         }
       }
@@ -49,16 +51,19 @@
 
     .value-addition {
       background-color: #a6f3a6;
+      color: @color-text-dark;
     }
 
     &.field-deletion {
       background-color: #ffecec;
+      color: @color-text-dark;
       &.is-root {
         background-color: inherit;
 
         .root-label {
           .field-name {
             background-color: #ffecec;
+            color: @color-text-dark
           }
         }
       }
@@ -66,6 +71,7 @@
 
     .value-deletion {
       background-color: #f8cbcb;
+      color: @color-text-dark;
     }
 
     label {

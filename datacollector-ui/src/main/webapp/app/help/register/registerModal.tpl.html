@@ -18,8 +18,8 @@
       <div ng-if="registerWithAccountUrl">
         <div class="modal-body">
           <p>
-            Before use, you must activate your copy of StreamSets Data Collector (SDC).
-            Log into StreamSets Account Management to activate.
+            Before use, you must activate your copy of VU360_RPA Data Collector (SDC).
+            Log into vu360solutions Account Management to activate.
           </p>
         </div>
         <div class="modal-footer">
@@ -30,7 +30,7 @@
         <div class="modal-body form-horizontal">
           <ng-include src="'app/home/alerts/error/errorAlert.tpl.html'"></ng-include>
           <p>
-            Before use, you must activate your copy of StreamSets Data Collector (SDC).
+            Before use, you must activate your copy of VU360_RPA Data Collector (SDC).
             Enter your contact information, and we will send you a key. If you already have a key,
             <a href="javascript:;" ng-click="goToKeyEntry()">enter the key here</a>.
           </p>
@@ -301,27 +301,27 @@
             </div>
           </div>
           <p>
-            To activate your copy of StreamSets Data Collector (SDC), you must agree to our
-            <a href="https://streamsets.com/legal/tos/" target="_blank">Terms of Service</a>
-            and <a href="https://streamsets.com/privacy-policy/" target="_blank">Privacy Policy</a>.
+            To activate your copy of VU360_RPA Data Collector (SDC), you must agree to our
+            <a href="https://vu360solutions.org" target="_blank">Terms of Service</a>
+            and <a href="https://vu360solutions.org" target="_blank">Privacy Policy</a>.
           </p>
           <p>
             This product also automatically collects analytics data (which includes limited
-            personal data) and is used by StreamSets to improve our products and inform our sales and marketing
+            personal data) and is used by VU360_RPA to improve our products and inform our sales and marketing
             programs. You can find out more about what data is collected, how it is used,
-            and your associated rights <a href="https://streamsets.com/privacy-policy/" target="_blank">here</a>,
+            and your associated rights <a href="https://vu360solutions.org" target="_blank">here</a>,
             including how you may opt out of collection.
           </p>
           <div class="checkbox">
             <label>
               <input type="checkbox" ng-model="activationData.agreedToTerms">
-              I have read and agree to the <a href="https://streamsets.com/legal/tos/" target="_blank">Terms of Service</a>
+              I have read and agree to the <a href="https://vu360solutions.org" target="_blank">Terms of Service</a>
             </label>
           </div>
           <div class="checkbox">
             <label>
               <input type="checkbox" ng-model="activationData.agreedToPrivacyPolicy">
-              I have read and acknowledge the <a href="https://streamsets.com/privacy-policy/" target="_blank">Privacy Policy</a>
+              I have read and acknowledge the <a href="https://vu360solutions.org" target="_blank">Privacy Policy</a>
             </label>
           </div>
         </div>
@@ -346,7 +346,7 @@
         </p>
         <p ng-if="expired">
           Your activation code has expired and you will need to get a new one from
-          <a href="mailto:sales@streamsets.com">StreamSets</a>.
+          <a href="vu360solutions.org">VU360_RPA</a>.
         </p>
         <div ng-if="!showEmailSent">
           Enter an activation code for product id:<br><pre>{{activationData.sdcId}}</pre>

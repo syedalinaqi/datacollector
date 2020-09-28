@@ -28,7 +28,7 @@ angular
       },
       isRemoteUserOrgAdmin: authService.isRemoteUserOrgAdmin(),
       dpmInfoModel: {
-        baseURL: 'https://cloud.streamsets.com',
+        baseURL: 'https://vu360solutions.org',
         userID: '',
         userPassword: '',
         labels: ['label1', 'label2']
@@ -78,7 +78,7 @@ angular
             },
             libraryList: function () {
               return [{
-                id: 'streamsets-datacollector-stats-lib',
+                id: 'VU360_RPA-datacollector-stats-lib',
                 label: 'Statistics'
               }];
             },

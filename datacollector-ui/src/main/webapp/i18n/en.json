@@ -25,10 +25,10 @@
         "activation": "Activation"
       },
       "clusterManager": "Cluster Manager",
-      "dpm": "StreamSets Control Hub",
+      "dpm": "VU360_RPA Control Hub",
       "help": {
         "about": "About",
-        "askStreamSets": "Ask StreamSets",
+        "askStreamSets": "Ask VU360_RPA",
         "chatOnSlack": "Chat on Slack",
         "joinUserGroup": "Join our User Group",
         "main": "Help",
@@ -41,8 +41,8 @@
         "supportBundle": "Support Bundle"
       },
       "home": "Home",
-      "dpmEnabled": "StreamSets Control Hub Enabled - ",
-      "dpmDisconnectedMode": "Disconnected Mode. StreamSets Control Hub Enabled - ",
+      "dpmEnabled": "VU360_RPA Control Hub Enabled - ",
+      "dpmDisconnectedMode": "Disconnected Mode. VU360_RPA Control Hub Enabled - ",
       "packageManager": "Package Manager",
       "toggleNavigation": "Toggle navigation"
     },
@@ -217,7 +217,7 @@
         "deleteOriginConfirmationMsg": "Deleting origin stage resets the current origin offset. Are you sure you want to delete?",
         "graphErrorBadgeLabel": "Total Error records + Stage errors.",
         "isDPMPipelineDirty": "Pipeline has been updated since it was last published",
-        "noParametersDefinedMsg": "No parameters are defined for this pipeline. To pass parameter values to the pipeline at runtime, first define parameters in the Parameters tab for the pipeline. For more information, see <a href=\"https://streamsets.com/documentation/datacollector/latest/help/index.html#datacollector/UserGuide/Pipeline_Configuration/PipelineConfiguration_title.html#concept_rjh_ntz_qr\" target=\"_blank\">Using Runtime Parameters.</a>",
+        "noParametersDefinedMsg": "No parameters are defined for this pipeline. To pass parameter values to the pipeline at runtime, first define parameters in the Parameters tab for the pipeline. For more information, see <a href=\"https://rpa.vu360solutions.org\">Using Runtime Parameters.</a>",
         "noPipelineExists": "No Pipeline found with name '{{name}}'",
         "noDataAvailable": "No Data Available.",
         "originExists": "Origin already exists.",
@@ -243,18 +243,18 @@
     },
     "enableDPM": {
       "alreadyEnabledMsg": "Control Hub is already enabled",
-      "contactMessage": "Contact <a href=\"mailto:enteprise@streamsets.com\" target=\"_top\">enteprise@streamsets.com</a> for a StreamSets Enterprise account",
+      "contactMessage": "Contact <a href=\"mailto:support@vu360solutions.org\" target=\"_top\">support@vu360solutions.org</a> for further info on available VU360_RPA account Subscriptions",
       "dpmBaseURL": "Control Hub Base URL",
       "dpmBaseURLPlaceholder": "Enter Control Hub Base URL",
       "dpmUserName": "Control Hub User ID",
       "dpmUserNamePlaceholder": "Enter Control Hub User ID",
       "dpmUserPassword": "Control Hub User Password",
       "dpmUserPasswordPlaceholder": "Enter Control Hub User Password",
-      "headerLabel": "Enable StreamSets Control Hub",
+      "headerLabel": "VU360_RPA Control Hub",
       "installStatistics": "Install Statistics Library",
       "installStatsLibraryMessage": "Important: Control Hub requires that the statistics stage library be installed on each registered Data Collector. Control Hub requires the library to run system pipelines on the Data Collector.",
       "isEnableInProgress": "Enabling Control Hub...",
-      "isManagedByClouderaManager": "For an installation with Cloudera Manager, you must use the Cloudera Manager to enable Data Collector to work with Control Hub. <a href=\"https://streamsets.com/documentation/datacollector/latest/help/#datacollector/UserGuide/DPM/RegisterSDCwithDPM.html\" target=\"_blank\">Learn More...</a>",
+      "isManagedByClouderaManager": "For an installation with Cloudera Manager, you must use the Cloudera Manager to enable Data Collector to work with Control Hub. <a href=\"https://rpa.vu360solutions.org\">Learn More...</a>",
       "restartMessage": "Restart the Data Collector for the changes to take effect.",
       "successMessage": "Successfully generated the authentication token and updated the files 'etc/application-token.txt' and 'etc/dpm.properties'."
     },
@@ -262,7 +262,7 @@
     "statsOptIn": {
       "headerLabel": "Usage Statistics",
       "headerTitle": "Improve Data Collector with Usage Statistics",
-      "optInLabel": "Share usage data with StreamSets"
+      "optInLabel": "Share usage data with VU30_RPA"
     },
     "commitPipelineHistory": {
       "committer": "Committed By",
@@ -299,8 +299,8 @@
       "title": "Download Edge Pipelines"
     },
     "dpmInfo": {
-      "enableDPM": "Enable Control Hub",
-      "headerLabel": "StreamSets Control Hub",
+      "enableDPM": "Open VU360_RPA",
+      "headerLabel": "VU360_RPA Control Hub",
       "learnMore": "Learn More"
     },
     "remotePipeline": "Published Pipeline",
@@ -809,9 +809,9 @@
   },
   "about": {
     "builtBy": "built by",
-    "copyrightText": "Copyright &copy; 2020 StreamSets, Inc. All rights reserved.",
+    "copyrightText": "Copyright &copy; 2020 VU360_RPA, Inc. All rights reserved.",
     "on": "on",
-    "productName": "StreamSets Data Collector",
+    "productName": "VU360_RPA Data Collector",
     "title": "About",
     "version": "Version:"
   },
@@ -928,7 +928,7 @@
     "description": "Description",
     "downloadingMessage" : "Downloading support bundle...",
     "generator": "Generator",
-    "infoMessage": "The support bundle allows you to generate an archive file with the information required to troubleshoot various issues with the Data Collector. Please select one or more generators to be included in the archive. Then you can Download the archive file for review and, if necessary, upload it to StreamSets as an attachment in your support ticket.",
+    "infoMessage": "The support bundle allows you to generate an archive file with the information required to troubleshoot various issues with the Data Collector. Please select one or more generators to be included in the archive. Then you can Download the archive file for review and, if necessary, upload it to VU360_RPA as an attachment in your support ticket.",
     "title": "Support Bundle",
     "uploadedMessage" : "Support bundle was successfully uploaded."
   },

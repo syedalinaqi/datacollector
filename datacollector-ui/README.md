@@ -18,6 +18,14 @@ export SDC_JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,addr
 dist/target/streamsets-datacollector-3.14.0-SNAPSHOT/streamsets-datacollector-3.14.0-SNAPSHOT/bin/streamsets dc
 ```
 
+- My Environment
+
+```
+export SDC_JAVA_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=1044 -Dsdc.static-web.dir=/Users/i10Studios/Workspace/StreamSets/datacollector/datacollector-ui/target/dist"
+dist/target/streamsets-datacollector-3.19.0-SNAPSHOT/streamsets-datacollector-3.19.0-SNAPSHOT/bin/streamsets dc
+```
+
+
 If you are in the datacollector-ui folder, this is
 
 ```
